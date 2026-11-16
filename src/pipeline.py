@@ -2,10 +2,6 @@ from src.analyzers import ask, analyze_job_description, analyze_cv
 from src.rag import retrieve_company_context
 
 def analyze_gap(jd_analysis: dict, cv_analysis: dict) -> dict:
-    """
-    Compares what the job wants vs what the candidate has.
-    Returns match score, missing skills, and LLM advice.
-    """
     jd_skills = set(s.lower() for s in jd_analysis.get("required_skills", []))
     cv_skills = set(s.lower() for s in cv_analysis.get("technical_skills", []))
 

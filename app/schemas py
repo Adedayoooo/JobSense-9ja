@@ -1,1 +1,21 @@
+from pydantic import BaseModel
 
+class AnalyzeRequest(BaseModel):
+    job_description: str
+    cv_text: str
+
+class GapResult(BaseModel):
+    match_score: int
+    matched_skills: list[str]
+    missing_skills: list[str]
+    verdict: str
+    should_apply: bool
+    one_line_summary: str
+    quick_wins: list[str]
+    honest_advice: str
+
+class AnalyzeResponse(BaseModel):
+    job: dict
+    candidate: dict
+    gap: GapResult
+    cover_letter: str

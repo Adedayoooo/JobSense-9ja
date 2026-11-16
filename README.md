@@ -15,7 +15,7 @@ An AI-powered job application assistant for Nigerian tech job seekers. Paste a j
 ---
 
 ## Tech Stack
-
+```
 | Layer | Technology |
 |---|---|
 | LLM | Groq API (LLaMA 3) |
@@ -44,7 +44,7 @@ jobsense-nigeria/
 ├── .gitignore
 ├── requirements.txt
 └── README.md
-
+```
 ---
 
 ## Quickstart

@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyc
+.Python
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# API keys — NEVER commit this
+.env
+.env.*
+
+# IDEs
+.vscode/
+.idea/
+.DS_Store
+*.swp
+
+# Jupyter / scratch
+*.ipynb
+.ipynb_checkpoints/
+rough_code.py
+_scratch.py
+
+# ChromaDB local storage
+chroma_db/
+*.chroma
+
+# Embedding / model cache
+.cache/
+sentence_transformers/
+
+# Logs
+*.log
+logs/
+
+# Build
+build/
+dist/
+*.egg-info/
+
+# Tests
+.pytest_cache/
+.coverage
+htmlcov/
